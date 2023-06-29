@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/toy-store/static/css/main.31d6cfe0.css",
+    "main.js": "/toy-store/static/js/main.86bc9f33.js",
+    "index.html": "/toy-store/index.html",
+    "main.86bc9f33.js.map": "/toy-store/static/js/main.86bc9f33.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.86bc9f33.js"
+  ]
+}

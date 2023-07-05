@@ -1,8 +1,7 @@
 import React from 'react'
 
 import "./header.css"
-import trainIllustration from "../../../images/toyTrain.svg"
-import "./header.css"
+import trainIllustration from "./toyTrain.svg"
 
 
 export default function Header() {

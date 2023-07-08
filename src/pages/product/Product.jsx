@@ -16,7 +16,7 @@ export default function Product(props) {
         <p className="project-description">{state.toyDescription}</p>
         <div className="purchase-area">
             <button className="add-to-cart-btn">Add to cart</button>
-            <p className="price">$0</p>
+            <p className="price">{state.toyPrice}</p>
         </div>
       </article>
 		</section>

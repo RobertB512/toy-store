@@ -17,10 +17,11 @@ export default function Shop() {
 						<Link to={`/toy-store/shop/${toy.toyTitle}`} key={toy.id}
             state={{
               toyName: toy.toyTitle,
+              toyDescription: toy.toyDescription,
+              toyPrice: toy.toyPrice,
               toyImg: toy.toyImg.img,
-              toyDescription: toy.toyDescription
             }}>
-							<ProductListItem toyName={toy.toyTitle} toyImg={toy.toyImg.img} />
+							<ProductListItem toyName={toy.toyTitle} toyPrice={toy.toyPrice} toyImg={toy.toyImg.img} />
 						</Link>
 					))}
 				</div>

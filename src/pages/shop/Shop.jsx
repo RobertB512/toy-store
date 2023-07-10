@@ -13,15 +13,21 @@ export default function Shop() {
 			<section>
 				<h3>Products</h3>
 				<div className="product-list-wrapper">
-					{toyList.map((toy) => (
-						<Link to={`/toy-store/shop/${toy.toyTitle}`} key={toy.id}
-            state={{
-              toyName: toy.toyTitle,
-              toyDescription: toy.toyDescription,
-              toyPrice: toy.toyPrice,
-              toyImg: toy.toyImg.img,
-            }}>
-							<ProductListItem toyName={toy.toyTitle} toyPrice={toy.toyPrice} toyImg={toy.toyImg.img} />
+					{toyList.map(toy => (
+						<Link
+							to={`/toy-store/shop/${toy.toyTitle}`}
+							key={toy.id}
+							state = {{
+								toyName: toy.toyTitle,
+								toyDescription: toy.toyDescription,
+								toyPrice: toy.toyPrice,
+								toyImg: toy.toyImg.img,
+							}}>
+							<ProductListItem
+								toyName={toy.toyTitle}
+								toyPrice={toy.toyPrice}
+								toyImg={toy.toyImg.img}
+							/>
 						</Link>
 					))}
 				</div>

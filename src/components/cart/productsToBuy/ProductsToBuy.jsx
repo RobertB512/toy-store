@@ -6,7 +6,6 @@ import { CartItems } from "../../../App";
 
 export default function ProductsToBuy() {
 	const cartItems = useContext(CartItems);
-  console.log("in cart", cartItems)
 	return (
 		<section>
 			<h3>Items in cart</h3>

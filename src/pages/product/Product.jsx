@@ -9,7 +9,6 @@ export default function Product(props) {
 	const toyTitle = useParams();
 	const { state } = useLocation();
 
-  console.log(cartItems)
 
 	return (
 		<section>

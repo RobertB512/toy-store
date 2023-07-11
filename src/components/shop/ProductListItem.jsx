@@ -8,7 +8,7 @@ export default function ProductListItem({toyName, toyPrice, toyImg}) {
       <div className="shop-product-info">
         <h3 className="product-name">{toyName}</h3>
         <div className="price-and-button">
-          <p className="product-listing-price">{toyPrice}</p>
+          <p className="product-listing-price">${toyPrice}</p>
           <button className="product-listing-btn">Add to cart</button>
         </div>
       </div>

@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState, useContext } from "react";
+
+import { CartItems } from "../../../App";
 
 export default function CheckOutArea() {
+	const [cartItems, setCartItems] = useContext(CartItems);
+	const [purchaseComplete, setPurchaseComplete] = useState(false);
+
+
+	const checkOut = e => {
+		if (cartItems.length > 0) {
+			e.preventDefault();
+			setCartItems([]);
+			setPurchaseComplete(true);
+		}
+	};
 	return (
 		<section>
 			<h3>Check out</h3>
-			<form action="">
+			<form action="" onSubmit={checkOut}>
 				<div className="form-group">
 					<label htmlFor="name">Name</label>
 					<input
@@ -130,8 +143,16 @@ export default function CheckOutArea() {
 					</div>
 				</div>
 
-				<p className="checkout-total">$0</p>
+				<p className="checkout-total">
+					$
+					{cartItems
+						.filter(cartItem => cartItem.toyPrice)
+						.reduce((total, current) => total + current.toyPrice, 0)}
+				</p>
 				<button className="checkout-btn">Buy items</button>
+				{purchaseComplete && (
+					<p className="thank-you-msg">Thank you for shopping with us!</p>
+				)}
 			</form>
 		</section>
 	);

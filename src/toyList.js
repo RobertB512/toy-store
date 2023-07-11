@@ -3,7 +3,7 @@ const toyList = [
 		id: 1,
 		toyTitle: "Raggedy Ann",
     toyDescription: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias iure minus ratione, quod ut autem recusandae earum cupiditate porro reprehenderit veritatis maxime illo eveniet vero ea illum natus! Dignissimos eligendi unde quis magnam natus impedit ab rem, exercitationem soluta blanditiis commodi fuga a laudantium nobis accusantium expedita recusandae, eaque necessitatibus. Sapiente nam laborum fugit! Hic iste labore ipsam facilis accusamus qui vitae repellat, ea reiciendis? Maiores est veniam illum. Impedit, quis porro doloremque molestiae qui fugit magnam facere possimus tempore quos nam ab alias et dolores? Quam quibusdam accusamus delectus ipsa ipsam exercitationem nobis expedita deleniti temporibus, voluptatum, repellat cumque!",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/raggedyAnn.jpg",
 			imgSourceSite: "Unsplash",
@@ -18,7 +18,7 @@ const toyList = [
 		id: 2,
 		toyTitle: "Marbles",
     toyDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nobis repudiandae error id nisi exercitationem, at repellat harum voluptatem eos soluta dolorem doloremque eius? Molestiae beatae doloremque fugit reprehenderit. Distinctio tenetur sunt soluta voluptate placeat nisi, nostrum magni repellendus dolores dolorum fuga enim veniam facilis, quas ducimus nihil non? Ab, voluptatibus ducimus. Odio voluptates ipsa quidem reprehenderit, placeat doloremque officia! Soluta facilis optio cumque minima nesciunt, laborum quaerat nulla voluptatibus odio voluptas dicta quisquam consequuntur tenetur similique molestias alias voluptatum! Vitae sequi delectus natus vero aut doloremque velit voluptatibus asperiores ut. Eligendi quae eum veritatis mollitia voluptate fugit, repellendus recusandae.",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/marbles.jpg",
 			imgSourceSite: "Unsplash",
@@ -33,7 +33,7 @@ const toyList = [
 		id: 3,
 		toyTitle: "Slinky",
     toyDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reiciendis magni? Quibusdam veritatis a officia eos nesciunt molestias saepe mollitia ullam asperiores similique possimus itaque voluptates, consequatur est nisi commodi provident. Magnam maxime cumque ipsam, repellat tempora itaque, ipsa expedita delectus obcaecati id dolore sunt odit maiores atque! Exercitationem pariatur, iste eveniet velit sed labore illum! Deleniti ducimus illo eligendi! A impedit quisquam eos, dolore dolorem quibusdam amet earum magni cum veritatis voluptates, blanditiis ratione? Earum, quae eaque. Quos cupiditate dolorum minima tempora excepturi facere quo laudantium enim distinctio necessitatibus autem, fugiat numquam aut accusantium. Obcaecati dignissimos ab odit molestias.",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/slinky.jpg",
 			imgSourceSite: "Unsplash",
@@ -48,7 +48,7 @@ const toyList = [
 		id: 4,
 		toyTitle: "Yo yo",
     toyDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reiciendis magni? Quibusdam veritatis a officia eos nesciunt molestias saepe mollitia ullam asperiores similique possimus itaque voluptates, consequatur est nisi commodi provident. Magnam maxime cumque ipsam, repellat tempora itaque, ipsa expedita delectus obcaecati id dolore sunt odit maiores atque! Exercitationem pariatur, iste eveniet velit sed labore illum! Deleniti ducimus illo eligendi! A impedit quisquam eos, dolore dolorem quibusdam amet earum magni cum veritatis voluptates, blanditiis ratione? Earum, quae eaque. Quos cupiditate dolorum minima tempora excepturi facere quo laudantium enim distinctio necessitatibus autem, fugiat numquam aut accusantium. Obcaecati dignissimos ab odit molestias.",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/yoYo.jpg",
 			imgSourceSite: "Pixabay",
@@ -63,7 +63,7 @@ const toyList = [
 		id: 5,
 		toyTitle: "Baseball gear",
     toyDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reiciendis magni? Quibusdam veritatis a officia eos nesciunt molestias saepe mollitia ullam asperiores similique possimus itaque voluptates, consequatur est nisi commodi provident. Magnam maxime cumque ipsam, repellat tempora itaque, ipsa expedita delectus obcaecati id dolore sunt odit maiores atque! Exercitationem pariatur, iste eveniet velit sed labore illum! Deleniti ducimus illo eligendi! A impedit quisquam eos, dolore dolorem quibusdam amet earum magni cum veritatis voluptates, blanditiis ratione? Earum, quae eaque. Quos cupiditate dolorum minima tempora excepturi facere quo laudantium enim distinctio necessitatibus autem, fugiat numquam aut accusantium. Obcaecati dignissimos ab odit molestias.",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/baseballGear.jpg",
 			imgSourceSite: "Pexels",
@@ -77,7 +77,7 @@ const toyList = [
 		id: 6,
 		toyTitle: "Hula hoop",
     toyDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reiciendis magni? Quibusdam veritatis a officia eos nesciunt molestias saepe mollitia ullam asperiores similique possimus itaque voluptates, consequatur est nisi commodi provident. Magnam maxime cumque ipsam, repellat tempora itaque, ipsa expedita delectus obcaecati id dolore sunt odit maiores atque! Exercitationem pariatur, iste eveniet velit sed labore illum! Deleniti ducimus illo eligendi! A impedit quisquam eos, dolore dolorem quibusdam amet earum magni cum veritatis voluptates, blanditiis ratione? Earum, quae eaque. Quos cupiditate dolorum minima tempora excepturi facere quo laudantium enim distinctio necessitatibus autem, fugiat numquam aut accusantium. Obcaecati dignissimos ab odit molestias.",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/hulaHoop.jpg",
 			imgSourceSite: "Pexels",
@@ -91,7 +91,7 @@ const toyList = [
 		id: 7,
 		toyTitle: "Jump rope",
     toyDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reiciendis magni? Quibusdam veritatis a officia eos nesciunt molestias saepe mollitia ullam asperiores similique possimus itaque voluptates, consequatur est nisi commodi provident. Magnam maxime cumque ipsam, repellat tempora itaque, ipsa expedita delectus obcaecati id dolore sunt odit maiores atque! Exercitationem pariatur, iste eveniet velit sed labore illum! Deleniti ducimus illo eligendi! A impedit quisquam eos, dolore dolorem quibusdam amet earum magni cum veritatis voluptates, blanditiis ratione? Earum, quae eaque. Quos cupiditate dolorum minima tempora excepturi facere quo laudantium enim distinctio necessitatibus autem, fugiat numquam aut accusantium. Obcaecati dignissimos ab odit molestias.",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/jumpRope.jpg",
 			imgSourceSite: "Unsplash",
@@ -106,7 +106,7 @@ const toyList = [
 		id: 8,
 		toyTitle: "Rubix cube",
     toyDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reiciendis magni? Quibusdam veritatis a officia eos nesciunt molestias saepe mollitia ullam asperiores similique possimus itaque voluptates, consequatur est nisi commodi provident. Magnam maxime cumque ipsam, repellat tempora itaque, ipsa expedita delectus obcaecati id dolore sunt odit maiores atque! Exercitationem pariatur, iste eveniet velit sed labore illum! Deleniti ducimus illo eligendi! A impedit quisquam eos, dolore dolorem quibusdam amet earum magni cum veritatis voluptates, blanditiis ratione? Earum, quae eaque. Quos cupiditate dolorum minima tempora excepturi facere quo laudantium enim distinctio necessitatibus autem, fugiat numquam aut accusantium. Obcaecati dignissimos ab odit molestias.",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/rubixCube.jpg",
 			imgSourceSite: "Unsplash",
@@ -121,7 +121,7 @@ const toyList = [
 		id: 9,
 		toyTitle: "Adacus",
     toyDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reiciendis magni? Quibusdam veritatis a officia eos nesciunt molestias saepe mollitia ullam asperiores similique possimus itaque voluptates, consequatur est nisi commodi provident. Magnam maxime cumque ipsam, repellat tempora itaque, ipsa expedita delectus obcaecati id dolore sunt odit maiores atque! Exercitationem pariatur, iste eveniet velit sed labore illum! Deleniti ducimus illo eligendi! A impedit quisquam eos, dolore dolorem quibusdam amet earum magni cum veritatis voluptates, blanditiis ratione? Earum, quae eaque. Quos cupiditate dolorum minima tempora excepturi facere quo laudantium enim distinctio necessitatibus autem, fugiat numquam aut accusantium. Obcaecati dignissimos ab odit molestias.",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/adacus.jpg",
 			imgSourceSite: "Pexels",
@@ -135,7 +135,7 @@ const toyList = [
 		id: 10,
 		toyTitle: "Nesting dolls",
     toyDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reiciendis magni? Quibusdam veritatis a officia eos nesciunt molestias saepe mollitia ullam asperiores similique possimus itaque voluptates, consequatur est nisi commodi provident. Magnam maxime cumque ipsam, repellat tempora itaque, ipsa expedita delectus obcaecati id dolore sunt odit maiores atque! Exercitationem pariatur, iste eveniet velit sed labore illum! Deleniti ducimus illo eligendi! A impedit quisquam eos, dolore dolorem quibusdam amet earum magni cum veritatis voluptates, blanditiis ratione? Earum, quae eaque. Quos cupiditate dolorum minima tempora excepturi facere quo laudantium enim distinctio necessitatibus autem, fugiat numquam aut accusantium. Obcaecati dignissimos ab odit molestias.",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/nestingDolls.jpg",
 			imgSourceSite: "Pixabay",
@@ -150,7 +150,7 @@ const toyList = [
 		id: 11,
 		toyTitle: "Water gun set",
     toyDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero placeat cupiditate error non labore? Ipsam, maiores! Molestiae quidem ex magni non ipsa consectetur aliquid quae expedita sint culpa deserunt, ut unde? Facilis culpa consectetur tempore veritatis molestias facere accusamus, dolore hic. Reprehenderit illo quis sequi est debitis nesciunt illum. Sed doloribus, delectus, ex cum aliquid laudantium sunt at sint laborum, saepe dolorem! Nisi fugiat voluptatum veniam et accusantium, possimus esse neque non id accusamus facere! Accusantium quia repellendus excepturi reprehenderit, vel recusandae ex voluptatem corrupti sit et optio nostrum fuga placeat deserunt fugiat voluptatum accusamus tenetur. Obcaecati, suscipit perferendis. Tempore!",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/waterGun.jpg",
 			imgSourceSite: "Pexels",
@@ -164,7 +164,7 @@ const toyList = [
 		id: 12,
 		toyTitle: "Soccer ball",
     toyDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero placeat cupiditate error non labore? Ipsam, maiores! Molestiae quidem ex magni non ipsa consectetur aliquid quae expedita sint culpa deserunt, ut unde? Facilis culpa consectetur tempore veritatis molestias facere accusamus, dolore hic. Reprehenderit illo quis sequi est debitis nesciunt illum. Sed doloribus, delectus, ex cum aliquid laudantium sunt at sint laborum, saepe dolorem! Nisi fugiat voluptatum veniam et accusantium, possimus esse neque non id accusamus facere! Accusantium quia repellendus excepturi reprehenderit, vel recusandae ex voluptatem corrupti sit et optio nostrum fuga placeat deserunt fugiat voluptatum accusamus tenetur. Obcaecati, suscipit perferendis. Tempore!",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/soccerBall.jpg",
 			imgSourceSite: "Pixabay",
@@ -179,7 +179,7 @@ const toyList = [
 		id: 13,
 		toyTitle: "Frisbee",
     toyDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero placeat cupiditate error non labore? Ipsam, maiores! Molestiae quidem ex magni non ipsa consectetur aliquid quae expedita sint culpa deserunt, ut unde? Facilis culpa consectetur tempore veritatis molestias facere accusamus, dolore hic. Reprehenderit illo quis sequi est debitis nesciunt illum. Sed doloribus, delectus, ex cum aliquid laudantium sunt at sint laborum, saepe dolorem! Nisi fugiat voluptatum veniam et accusantium, possimus esse neque non id accusamus facere! Accusantium quia repellendus excepturi reprehenderit, vel recusandae ex voluptatem corrupti sit et optio nostrum fuga placeat deserunt fugiat voluptatum accusamus tenetur. Obcaecati, suscipit perferendis. Tempore!",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/frisbee.jpg",
 			imgSourceSite: "Pexels",
@@ -193,7 +193,7 @@ const toyList = [
 		id: 14,
 		toyTitle: "Legos",
     toyDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero placeat cupiditate error non labore? Ipsam, maiores! Molestiae quidem ex magni non ipsa consectetur aliquid quae expedita sint culpa deserunt, ut unde? Facilis culpa consectetur tempore veritatis molestias facere accusamus, dolore hic. Reprehenderit illo quis sequi est debitis nesciunt illum. Sed doloribus, delectus, ex cum aliquid laudantium sunt at sint laborum, saepe dolorem! Nisi fugiat voluptatum veniam et accusantium, possimus esse neque non id accusamus facere! Accusantium quia repellendus excepturi reprehenderit, vel recusandae ex voluptatem corrupti sit et optio nostrum fuga placeat deserunt fugiat voluptatum accusamus tenetur. Obcaecati, suscipit perferendis. Tempore!",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/legos.jpg",
 			imgSourceSite: "Unsplash",
@@ -208,7 +208,7 @@ const toyList = [
 		id: 15,
 		toyTitle: "Skateboard",
     toyDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero placeat cupiditate error non labore? Ipsam, maiores! Molestiae quidem ex magni non ipsa consectetur aliquid quae expedita sint culpa deserunt, ut unde? Facilis culpa consectetur tempore veritatis molestias facere accusamus, dolore hic. Reprehenderit illo quis sequi est debitis nesciunt illum. Sed doloribus, delectus, ex cum aliquid laudantium sunt at sint laborum, saepe dolorem! Nisi fugiat voluptatum veniam et accusantium, possimus esse neque non id accusamus facere! Accusantium quia repellendus excepturi reprehenderit, vel recusandae ex voluptatem corrupti sit et optio nostrum fuga placeat deserunt fugiat voluptatum accusamus tenetur. Obcaecati, suscipit perferendis. Tempore!",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/skateboard.jpg",
 			imgSourceSite: "Unsplash",
@@ -223,7 +223,7 @@ const toyList = [
 		id: 16,
 		toyTitle: "Cards",
     toyDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero placeat cupiditate error non labore? Ipsam, maiores! Molestiae quidem ex magni non ipsa consectetur aliquid quae expedita sint culpa deserunt, ut unde? Facilis culpa consectetur tempore veritatis molestias facere accusamus, dolore hic. Reprehenderit illo quis sequi est debitis nesciunt illum. Sed doloribus, delectus, ex cum aliquid laudantium sunt at sint laborum, saepe dolorem! Nisi fugiat voluptatum veniam et accusantium, possimus esse neque non id accusamus facere! Accusantium quia repellendus excepturi reprehenderit, vel recusandae ex voluptatem corrupti sit et optio nostrum fuga placeat deserunt fugiat voluptatum accusamus tenetur. Obcaecati, suscipit perferendis. Tempore!",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/cards.jpg",
 			imgSourceSite: "Unsplash",
@@ -238,7 +238,7 @@ const toyList = [
 		id: 17,
 		toyTitle: "6 dice",
     toyDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero placeat cupiditate error non labore? Ipsam, maiores! Molestiae quidem ex magni non ipsa consectetur aliquid quae expedita sint culpa deserunt, ut unde? Facilis culpa consectetur tempore veritatis molestias facere accusamus, dolore hic. Reprehenderit illo quis sequi est debitis nesciunt illum. Sed doloribus, delectus, ex cum aliquid laudantium sunt at sint laborum, saepe dolorem! Nisi fugiat voluptatum veniam et accusantium, possimus esse neque non id accusamus facere! Accusantium quia repellendus excepturi reprehenderit, vel recusandae ex voluptatem corrupti sit et optio nostrum fuga placeat deserunt fugiat voluptatum accusamus tenetur. Obcaecati, suscipit perferendis. Tempore!",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/dice.jpg",
 			imgSourceSite: "Unsplash",
@@ -253,7 +253,7 @@ const toyList = [
 		id: 18,
 		toyTitle: "Chess",
     toyDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero placeat cupiditate error non labore? Ipsam, maiores! Molestiae quidem ex magni non ipsa consectetur aliquid quae expedita sint culpa deserunt, ut unde? Facilis culpa consectetur tempore veritatis molestias facere accusamus, dolore hic. Reprehenderit illo quis sequi est debitis nesciunt illum. Sed doloribus, delectus, ex cum aliquid laudantium sunt at sint laborum, saepe dolorem! Nisi fugiat voluptatum veniam et accusantium, possimus esse neque non id accusamus facere! Accusantium quia repellendus excepturi reprehenderit, vel recusandae ex voluptatem corrupti sit et optio nostrum fuga placeat deserunt fugiat voluptatum accusamus tenetur. Obcaecati, suscipit perferendis. Tempore!",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/chess.jpg",
 			imgSourceSite: "Unsplash",
@@ -268,7 +268,7 @@ const toyList = [
 		id: 19,
 		toyTitle: "Darts",
     toyDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero placeat cupiditate error non labore? Ipsam, maiores! Molestiae quidem ex magni non ipsa consectetur aliquid quae expedita sint culpa deserunt, ut unde? Facilis culpa consectetur tempore veritatis molestias facere accusamus, dolore hic. Reprehenderit illo quis sequi est debitis nesciunt illum. Sed doloribus, delectus, ex cum aliquid laudantium sunt at sint laborum, saepe dolorem! Nisi fugiat voluptatum veniam et accusantium, possimus esse neque non id accusamus facere! Accusantium quia repellendus excepturi reprehenderit, vel recusandae ex voluptatem corrupti sit et optio nostrum fuga placeat deserunt fugiat voluptatum accusamus tenetur. Obcaecati, suscipit perferendis. Tempore!",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/darts.jpg",
 			imgSourceSite: "Unsplash",
@@ -283,7 +283,7 @@ const toyList = [
 		id: 20,
 		toyTitle: "Monopoly",
     toyDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero placeat cupiditate error non labore? Ipsam, maiores! Molestiae quidem ex magni non ipsa consectetur aliquid quae expedita sint culpa deserunt, ut unde? Facilis culpa consectetur tempore veritatis molestias facere accusamus, dolore hic. Reprehenderit illo quis sequi est debitis nesciunt illum. Sed doloribus, delectus, ex cum aliquid laudantium sunt at sint laborum, saepe dolorem! Nisi fugiat voluptatum veniam et accusantium, possimus esse neque non id accusamus facere! Accusantium quia repellendus excepturi reprehenderit, vel recusandae ex voluptatem corrupti sit et optio nostrum fuga placeat deserunt fugiat voluptatum accusamus tenetur. Obcaecati, suscipit perferendis. Tempore!",
-    toyPrice: `$${Math.floor(Math.random() * (31 - 1) + 1)}`,
+    toyPrice: Math.floor(Math.random() * (31 - 1) + 1),
 		toyImg: {
 			img: "images/productImages/monopoly.jpg",
 			imgSourceSite: "Pixabay",

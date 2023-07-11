@@ -1,5 +1,7 @@
 import React from "react";
 
+import toyList from "../../../toyList";
+
 export default function Footer() {
 	return (
 		<footer>
@@ -16,6 +18,19 @@ export default function Footer() {
 							Pixabay
 						</a>
 					</li>
+					{toyList.map(toy => (
+						<li key={toy.id}>
+							{" "}
+							{toy.toyTitle} image by{" "}
+							<a href={toy.toyImg.imgSourceCreatorUrl}>
+								{toy.toyImg.imgSourceCreator}
+							</a>{" "}
+							from{" "}
+							<a href={toy.toyImg.imgSourceSiteUrl}>
+								{toy.toyImg.imgSourceSite}
+							</a>
+						</li>
+					))}
 				</ul>
 			</>
 		</footer>

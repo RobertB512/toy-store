@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
 import "./shop.css";
 import ProductListItem from "../../components/shop/ProductListItem";
 import toyList from "../../toyList";
+// import {CartItems} from "../../App";
 
 export default function Shop() {
+	// const [cartItems, setCartItems] = useContext(CartItems)
 	return (
 		<>
 			<h2>Shop</h2>
@@ -17,7 +19,8 @@ export default function Shop() {
 						<Link
 							to={`/toy-store/shop/${toy.toyTitle}`}
 							key={toy.id}
-							state = {{
+							state={{
+                toyInfo: {toy},
 								toyName: toy.toyTitle,
 								toyDescription: toy.toyDescription,
 								toyPrice: toy.toyPrice,
@@ -32,7 +35,6 @@ export default function Shop() {
 					))}
 				</div>
 			</section>
-			\
 		</>
 	);
 }

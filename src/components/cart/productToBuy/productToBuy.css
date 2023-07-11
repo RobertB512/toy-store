@@ -1,0 +1,19 @@
+.product-to-buy {
+  display: flex;
+  width: 35rem;
+  height: 10rem;
+}
+.toy-img-wrapper {
+  /* width: 30%; */
+  height: 100%;
+}
+
+.toy-img {
+  width: auto;
+  height: 100%;
+}
+.toy-info {
+  width: 100%;
+  background-color: blue;
+  color: white;
+}

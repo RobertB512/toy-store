@@ -1,17 +1,58 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useRef } from "react";
 
+import FormDetails from "../../../Validations/CheckoutValidation";
 import { CartItems } from "../../../App";
+
+import "./checkOutArea.css";
 
 export default function CheckOutArea() {
 	const [cartItems, setCartItems] = useContext(CartItems);
+	const [errorInForm, setErrorInForm] = useState(false);
 	const [purchaseComplete, setPurchaseComplete] = useState(false);
 
+	const nameEntry = useRef();
+	const emailEntry = useRef();
+	const streetAddrEntry = useRef();
+	const cityEntry = useRef();
+	const zipEntry = useRef();
+	const cardNumberEntry = useRef();
+	const expDateEntry = useRef();
+	const cvvEntry = useRef();
 
-	const checkOut = e => {
-		if (cartItems.length > 0) {
-			e.preventDefault();
+	const checkOut = async e => {
+		e.preventDefault();
+		const paymentDetails = {
+			name: e.target[0].value,
+			email: e.target[1].value,
+			streetAddr: e.target[2].value,
+			city: e.target[3].value,
+			zip: e.target[5].value,
+			cardNumber: e.target[6].value,
+			expDate: e.target[7].value,
+			cvv: e.target[8].value,
+		};
+		const isValid = await FormDetails.isValid(paymentDetails);
+		if (cartItems.length > 0 && isValid) {
 			setCartItems([]);
 			setPurchaseComplete(true);
+			setErrorInForm(false);
+
+      nameEntry.current.value = ""
+      emailEntry.current.value = ""
+      streetAddrEntry.current.value = ""
+      cityEntry.current.value = ""
+      zipEntry.current.value = ""
+      cardNumberEntry.current.value = ""
+      expDateEntry.current.value = ""
+      cvvEntry.current.value = ""
+      
+
+			console.log(e);
+
+			console.log("success");
+		} else if (cartItems.length > 0 && !isValid) {
+			setErrorInForm(true);
+			console.log("error in form");
 		}
 	};
 	return (
@@ -21,42 +62,42 @@ export default function CheckOutArea() {
 				<div className="form-group">
 					<label htmlFor="name">Name</label>
 					<input
+						ref={nameEntry}
 						id="name"
 						type="text"
 						name="name"
 						placeholder="Name"
-						required
 					/>
 				</div>
 				<div className="form-group">
 					<label htmlFor="email">Email</label>
 					<input
+						ref={emailEntry}
 						id="email"
 						type="text"
 						name="email"
 						placeholder="Email"
-						required
 					/>
 				</div>
 				<div className="address-inputs">
 					<div className="form-group">
 						<label htmlFor="street-addr">Street address</label>
 						<input
+							ref={streetAddrEntry}
 							id="street-addr"
 							type="text"
 							name="street-addr"
 							placeholder="Street address"
-							required
 						/>
 					</div>
 					<div className="form-group">
 						<label htmlFor="city">City</label>
 						<input
+							ref={cityEntry}
 							id="city"
 							type="text"
 							name="city"
 							placeholder="City"
-							required
 						/>
 					</div>
 					<div className="form-group">
@@ -123,23 +164,45 @@ export default function CheckOutArea() {
 					</div>
 					<div className="form-group">
 						<label htmlFor="zip">Zip</label>
-						<input id="zip" type="text" name="zip" placeholder="Zip" required />
+						<input
+							ref={zipEntry}
+							id="zip"
+							type="text"
+							name="zip"
+							placeholder="Zip"
+						/>
 					</div>
 				</div>
 				<div className="credit-card-inputs">
 					<div className="form-group">
 						<label htmlFor="card-number">Card number</label>
 						<input
+							ref={cardNumberEntry}
 							id="card-number"
 							type="text"
 							name="card-number"
 							placeholder="Card number"
-							required
+						/>
+					</div>
+					<div className="form-group">
+						<label htmlFor="exp-date">Exp date</label>
+						<input
+							ref={expDateEntry}
+							id="exp-date"
+							type="text"
+							name="exp-date"
+							placeholder="MM/YYYY"
 						/>
 					</div>
 					<div className="form-group">
 						<label htmlFor="cvv">CVV</label>
-						<input id="cvv" type="text" name="cvv" placeholder="CVV" required />
+						<input
+							ref={cvvEntry}
+							id="cvv"
+							type="text"
+							name="cvv"
+							placeholder="CVV"
+						/>
 					</div>
 				</div>
 
@@ -153,6 +216,11 @@ export default function CheckOutArea() {
 				{purchaseComplete && (
 					<p className="thank-you-msg">Thank you for shopping with us!</p>
 				)}
+				{errorInForm ? (
+					<p className="form-error-msg">
+						One or more fields were filled out incorrectly.
+					</p>
+				) : null}
 			</form>
 		</section>
 	);

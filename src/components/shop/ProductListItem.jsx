@@ -9,7 +9,6 @@ export default function ProductListItem({toyName, toyPrice, toyImg}) {
         <h3 className="product-name">{toyName}</h3>
         <div className="price-and-button">
           <p className="product-listing-price">${toyPrice}</p>
-          <button className="product-listing-btn">Add to cart</button>
         </div>
       </div>
       <img className="product-list-item-img" src={toyImg} alt={toyName} />

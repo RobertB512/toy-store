@@ -3,25 +3,29 @@ import { NavLink } from "react-router-dom";
 
 import { CartItems } from "../../../App";
 
+import "./navigation.css"
+
 export default function Navigation() {
 	const cartItems = useContext(CartItems);
 
 	return (
-		<nav>
-			<p className="logo">SF</p>
-			<ul>
-				<li>
-					<NavLink to="/toy-store">Home</NavLink>
-				</li>
-				<li>
-					<NavLink to="/toy-store/shop">Shop</NavLink>
-				</li>
-				<li>
-					<NavLink to="/toy-store/cart">
-						Cart <span className="items-in-cart">{cartItems[0].length}</span>
-					</NavLink>
-				</li>
-			</ul>
+		<nav className="navbar navbar-expand bg-secondary-subtle">
+			<div className="container">
+        <p className="navbar-brand logo">SF</p>
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <NavLink className="nav-link link-dark" to="/toy-store">Home</NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link link-dark" to="/toy-store/shop">Shop</NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link link-dark" to="/toy-store/cart">
+              Cart <span className="items-in-cart">{cartItems[0].length}</span>
+            </NavLink>
+          </li>
+        </ul>
+      </div>
 		</nav>
 	);
 }

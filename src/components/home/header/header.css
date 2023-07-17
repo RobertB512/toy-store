@@ -1,0 +1,18 @@
+/* header {
+  height: 25rem;
+} */
+
+.introduction {
+  padding: 3rem;
+}
+
+.header-img {
+  width: auto;
+  height: 30rem;
+}
+.image-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}

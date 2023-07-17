@@ -1,0 +1,10 @@
+.extra-info article {
+  padding: 2rem;
+  color: white;
+}
+.extra-info:first-child {
+  background-color: green;
+}
+.extra-info:last-child {
+  background-color: brown;
+}

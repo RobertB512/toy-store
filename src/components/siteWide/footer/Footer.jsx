@@ -2,9 +2,11 @@ import React from "react";
 
 import toyList from "../../../toyList";
 
+import "./footer.css"
+
 export default function Footer() {
 	return (
-		<footer>
+		<footer className="text-bg-dark">
 			<>
 				<h3>Image attributions</h3>
 				<ul>

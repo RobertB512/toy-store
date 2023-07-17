@@ -10,7 +10,7 @@ export default function ProductToBuy({ toyImg, toyTitle, toyPrice }) {
 			</div>
 			<div className="toy-info">
 				<p className="toy-title">{toyTitle}</p>
-				<p className="toy-price">{toyPrice}</p>
+				<p className="toy-price">${toyPrice}</p>
 			</div>
 		</div>
 	);

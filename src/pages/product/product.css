@@ -1,11 +1,25 @@
 h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1rem;
 }
 .product-page-img {
-  width: 40rem;
+  max-width: 100%;
   height: auto;
 }
 .project-description {
-  font-size: 2rem;
-  width: 700px;
+  /* width: 700px; */
+}
+
+
+
+.price, button {
+  font-size: 1.5rem;
+  height: 3rem;
+}
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

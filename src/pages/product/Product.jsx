@@ -11,21 +11,23 @@ export default function Product(props) {
 
 
 	return (
-		<section>
+		<section className="container-fluid p-3">
 			<h2>Product: {toyTitle.toy}</h2>
-			<img className="product-page-img" src={`../${state.toyImg}`} alt={toyTitle.toy} />
-			<article className="toy-details">
-				<p className="project-description">{state.toyDescription}</p>
-				<div className="purchase-area">
-					<p className="price">{state.toyPrice}</p>
-					<button
-						className="add-to-cart-btn"
-						onClick={() => setCartItems([...cartItems, {toyTitle: toyTitle.toy, toyImg: state.toyImg, toyPrice: state.toyPrice}])
-						}>
-						Add to cart
-					</button>
-				</div>
-			</article>
+			<div className="row justify-content-center product-info">
+        <div className=" col-md-4 img-wrapper"><img className="product-page-img" src={`../${state.toyImg}`} alt={toyTitle.toy} /></div>
+        <article className="col-md-8 w-100 toy-details">
+          <p className="project-description">{state.toyDescription}</p>
+          <div className="row purchase-area">
+            <p className="col-2 text-bg-dark price">${state.toyPrice}</p>
+            <button
+              className="col-2 w-auto border-0 button text-bg-primary add-to-cart-btn"
+              onClick={() => setCartItems([...cartItems, {toyTitle: toyTitle.toy, toyImg: state.toyImg, toyPrice: state.toyPrice}])
+              }>
+              Add to cart
+            </button>
+          </div>
+        </article>
+      </div>
 		</section>
 	);
 }

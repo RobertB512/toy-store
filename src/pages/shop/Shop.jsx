@@ -9,11 +9,11 @@ import toyList from "../../toyList";
 export default function Shop() {
 	// const [cartItems, setCartItems] = useContext(CartItems)
 	return (
-		<>
-			<h2>Shop</h2>
-			<p>Click an item to view more information</p>
+		<section className="shop">
+			<h2 className="">Shop</h2>
+			<p className="tip">Click an item to view more information</p>
 			<section>
-				<h3>Products</h3>
+				<h3 className="mb-3">Products</h3>
 				<div className="product-list-wrapper">
 					{toyList.map(toy => (
 						<Link
@@ -35,6 +35,6 @@ export default function Shop() {
 					))}
 				</div>
 			</section>
-		</>
+		</section>
 	);
 }

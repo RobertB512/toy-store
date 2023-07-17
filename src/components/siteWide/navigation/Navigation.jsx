@@ -21,7 +21,7 @@ export default function Navigation() {
           </li>
           <li className="nav-item">
             <NavLink className="nav-link link-dark" to="/toy-store/cart">
-              Cart <span className="items-in-cart">{cartItems[0].length}</span>
+              Cart <span className="text-bg-dark fw-bold p-2 items-in-cart">{cartItems[0].length}</span>
             </NavLink>
           </li>
         </ul>

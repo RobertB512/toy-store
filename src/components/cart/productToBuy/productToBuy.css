@@ -1,19 +1,32 @@
 .product-to-buy {
   display: flex;
-  width: 35rem;
+  max-width: 35rem;
   height: 10rem;
 }
 .toy-img-wrapper {
-  /* width: 30%; */
   height: 100%;
-}
+} 
 
 .toy-img {
   width: auto;
   height: 100%;
 }
-.toy-info {
-  width: 100%;
-  background-color: blue;
-  color: white;
+/* .toy-info {
+  
+} */
+.toy-title {
+  font-size: 1.5rem;
+}
+.toy-price {
+  font-size: 1.2rem;
+  width: fit-content;
+}
+
+@media(max-width: 400px) {
+  .product-to-buy {
+    height: 8rem;
+  }
+  .toy-title {
+    font-size: 1rem;
+  }
 }

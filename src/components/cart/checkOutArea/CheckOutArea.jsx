@@ -37,15 +37,14 @@ export default function CheckOutArea() {
 			setPurchaseComplete(true);
 			setErrorInForm(false);
 
-      nameEntry.current.value = ""
-      emailEntry.current.value = ""
-      streetAddrEntry.current.value = ""
-      cityEntry.current.value = ""
-      zipEntry.current.value = ""
-      cardNumberEntry.current.value = ""
-      expDateEntry.current.value = ""
-      cvvEntry.current.value = ""
-      
+			nameEntry.current.value = "";
+			emailEntry.current.value = "";
+			streetAddrEntry.current.value = "";
+			cityEntry.current.value = "";
+			zipEntry.current.value = "";
+			cardNumberEntry.current.value = "";
+			expDateEntry.current.value = "";
+			cvvEntry.current.value = "";
 
 			console.log(e);
 
@@ -56,53 +55,64 @@ export default function CheckOutArea() {
 		}
 	};
 	return (
-		<section>
-			<h3>Check out</h3>
+		<section className="col col-xl-7 col-md-12 col-sm-12 text-bg-warning p-2 checkout-area">
+			<h3 className="mb-2">Check out</h3>
 			<form action="" onSubmit={checkOut}>
-				<div className="form-group">
-					<label htmlFor="name">Name</label>
+				<div className="form-floating form-group">
 					<input
+						className="form-control w-100 mb-1"
 						ref={nameEntry}
 						id="name"
 						type="text"
 						name="name"
 						placeholder="Name"
 					/>
+					<label className="form-label" htmlFor="name">
+						Name
+					</label>
 				</div>
-				<div className="form-group">
-					<label htmlFor="email">Email</label>
+				<div className="form-floating form-group">
 					<input
+						className="form-control w-100 mb-1"
 						ref={emailEntry}
 						id="email"
 						type="text"
 						name="email"
 						placeholder="Email"
 					/>
+					<label className="form-label" htmlFor="email">
+						Email
+					</label>
 				</div>
 				<div className="address-inputs">
-					<div className="form-group">
-						<label htmlFor="street-addr">Street address</label>
+					<div className="form-floating form-group">
 						<input
+							className="form-control w-100 mb-1"
 							ref={streetAddrEntry}
 							id="street-addr"
 							type="text"
 							name="street-addr"
 							placeholder="Street address"
 						/>
+						<label className="form-label" htmlFor="street-addr">
+							Street address
+						</label>
 					</div>
-					<div className="form-group">
-						<label htmlFor="city">City</label>
+					<div className="form-floating form-group">
 						<input
+							className="form-control w-100 mb-1"
 							ref={cityEntry}
 							id="city"
 							type="text"
 							name="city"
 							placeholder="City"
 						/>
+						<label className="form-label" htmlFor="city">
+							City
+						</label>
 					</div>
-					<div className="form-group">
-						<label htmlFor="state">State</label>
-						<select id="state" name="state">
+					<div className="form-floating form-group">
+						<select className="form-select w-100 mb-1" id="state" name="state">
 							<option value="AL">Alabama</option>
 							<option value="AK">Alaska</option>
 							<option value="AZ">Arizona</option>
@@ -161,63 +171,82 @@ export default function CheckOutArea() {
 							<option value="UM">United States Minor Outlying Islands</option>
 							<option value="VI">Virgin Islands</option>
 						</select>
+						<label className="form-label" htmlFor="state">
+							State
+						</label>
 					</div>
-					<div className="form-group">
-						<label htmlFor="zip">Zip</label>
+					<div className="form-floating form-group">
 						<input
+							className="form-control w-100 mb-1"
 							ref={zipEntry}
 							id="zip"
 							type="text"
 							name="zip"
 							placeholder="Zip"
 						/>
+						<label className="form-label" htmlFor="zip">
+							Zip
+						</label>
 					</div>
 				</div>
 				<div className="credit-card-inputs">
-					<div className="form-group">
-						<label htmlFor="card-number">Card number</label>
+					<div className="form-floating form-group">
 						<input
+							className="form-control w-100 mb-1"
 							ref={cardNumberEntry}
 							id="card-number"
 							type="text"
 							name="card-number"
 							placeholder="Card number"
 						/>
+						<label className="form-label" htmlFor="card-number">
+							Card number
+						</label>
 					</div>
-					<div className="form-group">
-						<label htmlFor="exp-date">Exp date</label>
+					<div className="form-floating form-group">
 						<input
+							className="form-control w-100 mb-1"
 							ref={expDateEntry}
 							id="exp-date"
 							type="text"
 							name="exp-date"
 							placeholder="MM/YYYY"
 						/>
+						<label className="from-label" htmlFor="exp-date">
+							Exp date
+						</label>
 					</div>
-					<div className="form-group">
-						<label htmlFor="cvv">CVV</label>
+					<div className="form-floating form-group">
 						<input
+							className="form-control w-100 mb-1"
 							ref={cvvEntry}
 							id="cvv"
 							type="text"
 							name="cvv"
 							placeholder="CVV"
 						/>
+						<label className="form-label" htmlFor="cvv">
+							CVV
+						</label>
 					</div>
 				</div>
 
-				<p className="checkout-total">
+				<p className="text-bg-dark fs-2 p-1 m-0 w-100 text-center checkout-total">
 					$
 					{cartItems
 						.filter(cartItem => cartItem.toyPrice)
 						.reduce((total, current) => total + current.toyPrice, 0)}
 				</p>
-				<button className="checkout-btn">Buy items</button>
+				<button className="btn btn-primary fs-3 p-1 border-0 w-100 checkout-btn">
+					Buy items
+				</button>
 				{purchaseComplete && (
-					<p className="thank-you-msg">Thank you for shopping with us!</p>
+					<p className="fs-4 text-success thank-you-msg">
+						Thank you for shopping with us!
+					</p>
 				)}
 				{errorInForm ? (
-					<p className="form-error-msg">
+					<p className="fs-4 text-danger form-error-msg">
 						One or more fields were filled out incorrectly.
 					</p>
 				) : null}

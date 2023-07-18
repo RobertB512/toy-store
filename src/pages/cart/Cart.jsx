@@ -6,10 +6,12 @@ import CheckOutArea from "../../components/cart/checkOutArea/CheckOutArea"
 
 export default function Cart() {
   return (
-    <>
-      <h2>Cart</h2>
-      <ProductsToBuy />
-      <CheckOutArea />
-    </>
+    <section className="container p-3 cart">
+      <h2 className="row">Cart</h2>
+      <div className="row cart-content">
+        <ProductsToBuy />
+        <CheckOutArea />
+      </div>
+    </section>
   )
 }
